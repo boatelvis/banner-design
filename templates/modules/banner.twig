@@ -1,0 +1,19 @@
+<section class="position-relative d-flex py-8 py-sm-9 bg-banner"
+  style="height: 1000px;">
+  <div class="bg-overlay bg-dark opacity-25"></div>
+  <div class="container position-relative align-items-center d-flex justify-content-center">
+    <div class="row">
+      <div class="col-xl-8 m-auto text-center py-xl-8">
+        {% for item in bannerData %}
+          <h1 class="display-1 fw-bold h1 text-white mb-3 title">
+            {{ item.title }}
+          </h1>
+          <h5 class="text-white mb-3">
+            {{ item.sub_title }}
+          </h5>
+          <a href="#" class="btn btn-lg btn-dark mb-0">Discover More</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
